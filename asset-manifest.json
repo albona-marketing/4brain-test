@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/4brain-test/static/css/main.490e69f2.css",
+    "main.js": "/4brain-test/static/js/main.74d1b4ee.js",
+    "index.html": "/4brain-test/index.html",
+    "main.490e69f2.css.map": "/4brain-test/static/css/main.490e69f2.css.map",
+    "main.74d1b4ee.js.map": "/4brain-test/static/js/main.74d1b4ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.490e69f2.css",
+    "static/js/main.74d1b4ee.js"
+  ]
+}
