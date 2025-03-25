@@ -1,0 +1,128 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+/* カラースキーム - 各タイプごとの色 */
+:root {
+  /* 支配者（爬虫類脳）- 赤系 */
+  --color-ruler: #e74c3c;
+  --color-ruler-light: #f5b7b1;
+  
+  /* 遊戯者（哺乳類脳）- 黄系 */
+  --color-player: #f39c12;
+  --color-player-light: #fad7a0;
+  
+  /* 観察者（人間脳・論理）- 青系 */
+  --color-observer: #3498db;
+  --color-observer-light: #aed6f1;
+  
+  /* 求道者（人間脳・抽象）- 紫系 */
+  --color-seeker: #9b59b6;
+  --color-seeker-light: #d7bde2;
+}
+
+/* スライダー／進捗バーのカスタマイズ */
+.slider {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3498db;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3498db;
+  cursor: pointer;
+}
+
+/* 質問フォーム */
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.radio-option:hover {
+  background-color: #f0f0f0;
+}
+
+.radio-option input {
+  margin-right: 0.5rem;
+}
+
+/* 結果カード */
+.result-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* 各タイプごとのカード装飾 */
+.ruler-card {
+  background: linear-gradient(135deg, #fff 60%, var(--color-ruler-light));
+  border-left: 5px solid var(--color-ruler);
+}
+
+.player-card {
+  background: linear-gradient(135deg, #fff 60%, var(--color-player-light));
+  border-left: 5px solid var(--color-player);
+}
+
+.observer-card {
+  background: linear-gradient(135deg, #fff 60%, var(--color-observer-light));
+  border-left: 5px solid var(--color-observer);
+}
+
+.seeker-card {
+  background: linear-gradient(135deg, #fff 60%, var(--color-seeker-light));
+  border-left: 5px solid var(--color-seeker);
+}
+
+/* アニメーション効果 */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 640px) {
+  .app-container {
+    padding: 0.5rem;
+  }
+  
+  .result-card {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "4brain-test",
+  "version": "0.1.0",
+  "description": "「４脳診断ツール（windsurf版）」- 支配者／遊戯者／観察者／求道者の診断ツール",
+  "private": true,
+  "homepage": "https://[GitHubユーザー名].github.io/4brain-test",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-scripts": "5.0.1",
+    "react-share": "^4.4.1",
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.27"
+  }
+}
